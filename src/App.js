@@ -1,7 +1,8 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import {Button} from 'demitoye'
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import { Button } from "demitoye";
+import  {DemiTest1, DemiTest2 } from "./lib/components/DemiTest";
 
 function App() {
   return (
@@ -17,8 +18,10 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Button />
+          <Button label="test" kind="danger" disabled={true} />
+          <DemiTest1 style={{ borderRadius: 5 }} label="demo" kind="primary" />
         </a>
+        <DemiTest2 style={{ borderRadius: 5 }} label="demo" kind="primary" />
       </header>
     </div>
   );
